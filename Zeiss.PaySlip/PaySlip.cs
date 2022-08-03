@@ -19,10 +19,11 @@ namespace Zeiss.PaySlip
         public void PrintPaySlip(string empID, short month, short year)
         {
             Console.WriteLine("Payslip for:" + year.ToString() + ", " + month.ToString());
-            Console.WriteLine(empID);
+            
             EmployeeBL emp = new EmployeeBL();
-            emp.GetEmpDetails(empID);
-            Console.WriteLine("Employee ID:" + empID + "First Name: " + emp.firstName + "Last Name: " + emp.lastName);
+            Console.WriteLine(emp.firstName);
+            emp = emp.GetEmpDetails(empID);
+            Console.WriteLine("Employee ID:" + empID + "Name: " + emp.firstName + " " + emp.lastName + " Date of Joining: " + emp.DOJ);
         }
     }
     

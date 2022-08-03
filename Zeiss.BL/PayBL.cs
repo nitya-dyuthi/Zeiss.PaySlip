@@ -27,7 +27,8 @@ namespace Zeiss.BL
         public EmployeeBL GetEmpDetails(string empID)
         {
             EmployeeDA emp1 = new EmployeeDA();
-            emp1.GetEmployeeDetails(empID);
+            Console.WriteLine("PayBL");
+            emp1 = emp1.GetEmployeeDetails(empID);
             EmployeeBL emp2 = new EmployeeBL();
             emp2.empID = emp1.empID;
             emp2.firstName = emp1.firstName;

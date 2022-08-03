@@ -29,10 +29,10 @@ namespace Zeiss.DataAccess
             //execute sp/qury
             //get emp deets to emp instance and return emp
             EmployeeDA emp = new EmployeeDA();
-            emp.firstName = "Raj";
             emp.empID = "M123";
+            emp.firstName = "Raj";
             emp.lastName = "Kumar";
-            emp.DOJ = "2016";
+            emp.DOJ = "01-05-2016";
             return emp;
         }
     }
